@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <h1>DashBoard</h1>
+    <h1 class="subheading grey--text">DashBoard</h1>
+
+    <v-content class="mx-4" >
+      <p>content</p>
+    </v-content>
   </div>
 </template>
 
