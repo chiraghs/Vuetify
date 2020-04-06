@@ -6,6 +6,10 @@
 
       <v-toolbar-title  class="grey--text">ToDOChiz</v-toolbar-title>
 
+      <v-flex class="mx-4">
+      <Popup/>
+    </v-flex>
+
       <v-spacer></v-spacer>
 
       <v-menu offset-y>
@@ -35,6 +39,12 @@
         </v-list-item>
       </v-list>
     </v-menu>
+
+    
+
+ 
+          
+  
 
       <v-btn icon v-model="drawer" @click="drawer =!drawer">
         <v-icon class="grey--text">mdi-dots-vertical</v-icon>
@@ -72,10 +82,7 @@
 
           <v-divider></v-divider>
 
-          <v-list-item class="px-2 center ml-4 ma-4">
-            <Popup/>
-
-          </v-list-item>
+           
 
 
           <v-divider></v-divider>
