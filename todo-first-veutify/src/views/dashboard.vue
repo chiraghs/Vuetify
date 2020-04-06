@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h1 class="subheading grey--text mx-4">DashBoard</h1>
+    <h4 class=" grey--text ligten-2 mx-4">Dashboard</h4>
 
     <v-container class="my-4"  >
 

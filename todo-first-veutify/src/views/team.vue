@@ -2,9 +2,10 @@
   <div class="home">
     <h1 class="subheading grey--text">Team</h1>
 
-    <v-content class="mx-4">
-      <p>content</p>
-    </v-content>
+    <v-container class="mx-4">
+      
+
+    </v-container>
   </div>
 </template>
 
