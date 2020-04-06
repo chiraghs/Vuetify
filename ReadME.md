@@ -47,6 +47,9 @@ You can also run additional npm tasks such as
 ## Vuetify
 Vuetify is developed exactly according to Material Design spec. Every component is hand crafted to bring you the best possible UI tools to your next great app. The development doesn't stop at the core components outlined in Google's spec. Through the support of community members and sponsors, additional components will be designed and made available for everyone to enjoy.
 
-##FireBAse
+## FireBase
 USed here for Hosting &&
 Firestore is used as real time database.
+
+## Responsive to XS,SM,MD,LG,XS
+![responsive Gif](/imagess/rform.png)  ![responsive Gif](/imagess/rdash.png) ![responsive Gif](/imagess/rteam.png)
