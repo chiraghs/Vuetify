@@ -43,6 +43,7 @@ You can also run additional npm tasks such as
 - `npm run build` to build your app for production
 - `npm i -g @vue/cli`
 - `npm create todo-first-veutify`
+-Select required and Continue
 
 ## Vuetify
 Vuetify is developed exactly according to Material Design spec. Every component is hand crafted to bring you the best possible UI tools to your next great app. The development doesn't stop at the core components outlined in Google's spec. Through the support of community members and sponsors, additional components will be designed and made available for everyone to enjoy.
