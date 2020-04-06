@@ -36,7 +36,7 @@ It contains.
 ## Getting Started
 - Install Nodejs from [Nodejs Official Page](https://nodejs.org/en/)
 - Navigate to the project
-- Run `npm run dev` or `yarn serve` to start a local development server
+- Run `npm run serve` to start a local development server
 - A new tab will be opened in your browser
 
 You can also run additional npm tasks such as
