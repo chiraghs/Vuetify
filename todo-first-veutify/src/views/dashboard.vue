@@ -3,6 +3,34 @@
     <h1 class="subheading grey--text mx-4">DashBoard</h1>
 
     <v-container class="my-4"  >
+
+      <v-layout row class="mb-3">
+
+        <v-tooltip top>
+        <template class="small" v-slot:activator="{ on }">
+           <v-btn small flat color="grey lighten-4" @click="sortBy('title')" v-on="on">
+           <v-btn-icon >
+              <v-icon left color="grey">folder</v-icon>
+            </v-btn-icon>
+          <span class="caption text-lowercase grey--text">By Project</span>
+        </v-btn>
+        </template>
+        <span>Sort By Project Name</span>
+        </v-tooltip>
+
+        <v-tooltip top>
+           <template class="small" v-slot:activator="{ on }">
+        <v-btn small flat color="grey lighten-4 ml-5" @click="sortBy('person')" v-on="on">
+           <v-btn-icon >
+              <v-icon left color="grey">person</v-icon>
+            </v-btn-icon>
+          <span class="caption text-lowercase grey--text">By Person</span>
+        </v-btn>
+        </template>
+        <span>Sort By Person Name</span>
+        </v-tooltip>
+
+      </v-layout>
       
       <v-card flat v-for="project in projects" :key="project.title">
         <v-layout row wrap :class="`pa-3 my-1 project ${project.status}`">
@@ -46,6 +74,11 @@ export default {
         { title: 'Design video thumbnails', person: 'Ryu', due: '20th Dec 2018', status: 'complete', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!'},
         { title: 'Create a community forum', person: 'Gouken', due: '20th Oct 2018', status: 'overdue', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eos eligendi illum minima adipisci deleniti, dicta mollitia enim explicabo fugiat quidem ducimus praesentium voluptates porro molestias non sequi animi!'},
       ]
+    }
+  },
+  methods:{
+    sortBy(whichtype){
+      this.projects.sort((a,b) => a[whichtype]<b[whichtype] ? -1 : 1)
     }
   }
 
