@@ -8,7 +8,7 @@
 
         <v-tooltip top>
         <template class="small" v-slot:activator="{ on }">
-           <v-btn small flat color="grey lighten-4" @click="sortBy('title')" v-on="on">
+           <v-btn small flat color="grey lighten-4" @click="sortBy('title')" v-on="on" class="ml-3">
            <v-btn-icon >
               <v-icon left color="grey">folder</v-icon>
             </v-btn-icon>
@@ -50,7 +50,7 @@
           </v-flex>
 
           <v-flex xs2 sm4 md2>
-            <div class="text-right">
+            <div class="text-right mr-1">
               <v-chip small :class="`${project.status} white--text my-2 caption`">{{ project.status }}</v-chip>
             </div>
           </v-flex>

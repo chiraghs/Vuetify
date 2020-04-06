@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1 class="subheading grey--text">projects</h1>
+    <p style="font-size:25px" class="subheading grey--text ma-4">Projects</p>
 
     <v-content class="mx-4">
        <v-expansion-panels>

@@ -8,6 +8,34 @@
 
       <v-spacer></v-spacer>
 
+      <v-menu offset-y>
+      <template v-slot:activator="{ on }">
+        
+        <v-btn
+          
+          depressed
+          dark
+          v-on="on"
+          class="grey lighten-1 text-lowercase"
+        >
+        <v-btn-icon>
+          <v-icon>expand_more</v-icon>
+        </v-btn-icon>
+          menu
+        </v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in links"
+          :key="index"
+          router :to="item.route"
+        >
+        <v-list-item-title>{{ item.text }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+
       <v-btn icon v-model="drawer" @click="drawer =!drawer">
         <v-icon class="grey--text">mdi-dots-vertical</v-icon>
       </v-btn>
@@ -44,6 +72,14 @@
 
           <v-divider></v-divider>
 
+          <v-list-item class="px-2 center ml-4 ma-4">
+            <Popup/>
+
+          </v-list-item>
+
+
+          <v-divider></v-divider>
+
           <v-list-item
             v-for="item in links"
             :key="item.title"
@@ -66,6 +102,7 @@
 </template>
 
 <script>
+import Popup from './Popup'
 
 export default {
     data(){
@@ -88,6 +125,8 @@ export default {
         return this.background ? 'https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg' : undefined
       },
     },
+     
+     components:{Popup}
     
 }
 </script>
