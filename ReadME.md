@@ -5,4 +5,4 @@
 ![Product Gif](/imagess/Mainpre.png)
 
 
-**Vuetify ToDo list*  is a beautiful resource built over [Vuetify](https://vuetifyjs.com/en/), [Vuex](https://vuex.vuejs.org/installation.html) and [Vuejs](https://vuejs.org/). It will help you get started developing dashboards in no time. Vuetify Material Dashboard is the official Vuejs version of the Original [Material Dashboard PRO](https://www.creative-tim.com/product/material-dashboard). Using the Dashboard is pretty simple but requires basic knowledge of Javascript, [Vuejs](https://vuejs.org/v2/guide/) and [Vue-Router](https://router.vuejs.org/en/)
+**Vuetify ToDo list*  is a beautiful resource built over [Vuetify](https://vuetifyjs.com/en/), Vuetify Material Dashboard is the official Vuejs version of the Original  Using the Dashboard is pretty simple but requires basic knowledge of Javascript, [Vuejs](https://vuejs.org/v2/guide/) ,[Vuetify] (https://vuetifyjs.com/)and [Vue-Router](https://router.vuejs.org/en/).
