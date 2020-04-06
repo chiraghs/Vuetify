@@ -1,15 +1,15 @@
 <template>
     <nav>
 
-    <v-toolbar>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <v-toolbar flat class="grey lighten-3" >
+      <v-app-bar-nav-icon class="grey--text"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>ToDOChiz</v-toolbar-title>
+      <v-toolbar-title  class="grey--text">ToDOChiz</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-btn icon v-model="drawer" @click="drawer =!drawer">
-        <v-icon>mdi-dots-vertical</v-icon>
+        <v-icon class="grey--text">mdi-dots-vertical</v-icon>
       </v-btn>
     </v-toolbar>
 
@@ -32,7 +32,7 @@
           class="py-0 px-1"
         >
           <v-list-item two-line :class="miniVariant && 'px-0'">
-            <v-list-item-avatar class="mr-3">
+            <v-list-item-avatar size="70" class="mr-3">
               <img src="../assets/Chiragn.png">
             </v-list-item-avatar>
 
